@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admission Form</h1>
+    <form>
+      <button class="option-btn" type="button" onclick="openModal('STUDENT NAME')">STUDENT NAME</button>
+      <button class="option-btn" type="button" onclick="openModal('PHONE')">PHONE</button>
+      <button class="option-btn" type="button" onclick="openModal('ADDRESS')">ADDRESS</button>
+      <button class="option-btn" type="button" onclick="openModal('COURSE')">COURSE</button>
+      <button class="register-btn" type="submit">Register</button>
+    </form>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 id="modal-title" class="modal-title"></h2>
+      <p id="modal-content" class="modal-text"></p>
+      <button class="close-btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>

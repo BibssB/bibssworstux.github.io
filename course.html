@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Selection Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Course Selection Form</h1>
+    <form>
+      <label for="course">Choose a Course:</label>
+      <select id="course" name="course" required>
+        <option value="BIM">BIM</option>
+        <option value="BCA">BCA</option>
+        <option value="BBS">BBS</option>
+      </select>
+      <button class="submit-btn" type="submit" onclick="submitCourseForm()">Submit</button>
+    </form>
+  </div>
+</body>
+<script src="form.js"></script>
+</html>
